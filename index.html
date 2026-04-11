@@ -16,115 +16,110 @@
       color: white;
       text-align: center;
       padding: 10px;
-      font-size: 14px;
     }
 
     .navbar {
+      position: sticky;
+      top: 0;
+      background: white;
       display: flex;
       justify-content: space-between;
-      align-items: center;
       padding: 12px 30px;
-      background: white;
       box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      z-index: 999;
     }
 
-    .logo {
-      height: 45px;
-    }
+    .logo { height: 45px; }
 
     .nav-btn {
       background: #D4AF37;
       padding: 10px 18px;
       text-decoration: none;
       color: black;
-      font-weight: bold;
       border-radius: 5px;
+      font-weight: bold;
     }
 
     .hero {
-      background: linear-gradient(135deg, #0B3C5D, #1F4E79);
+      background: linear-gradient(rgba(11,60,93,0.85), rgba(31,78,121,0.85)),
+      url('https://images.unsplash.com/photo-1554224155-8d04cb21cd6c');
+      background-size: cover;
       color: white;
       text-align: center;
-      padding: 70px 20px;
-    }
-
-    .hero h1 {
-      font-size: 36px;
-    }
-
-    .hero p {
-      font-size: 18px;
-      margin-top: 10px;
+      padding: 100px 20px;
     }
 
     .btn {
       background: #D4AF37;
       padding: 15px 30px;
-      text-decoration: none;
       color: black;
-      font-weight: bold;
+      text-decoration: none;
       border-radius: 6px;
+      font-weight: bold;
       display: inline-block;
       margin-top: 20px;
     }
 
     .section {
-      padding: 50px 20px;
+      padding: 60px 20px;
       max-width: 1000px;
       margin: auto;
       text-align: center;
     }
 
-    h2 {
-      color: #0B3C5D;
-      margin-bottom: 20px;
-    }
+    h2 { color: #0B3C5D; }
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
       gap: 20px;
     }
 
     .card {
       background: white;
       padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    .card:hover { transform: translateY(-8px); }
+
+    /* COUNTERS */
+    .counter {
+      font-size: 30px;
+      font-weight: bold;
+      color: #0B3C5D;
+    }
+
+    /* TESTIMONIAL */
+    .testimonial {
+      background: white;
+      padding: 25px;
       border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     }
 
-    .cta {
-      background: #0B3C5D;
-      color: white;
-      text-align: center;
-      padding: 60px 20px;
+    /* PRICING */
+    .price-card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
     }
 
-    .cta h2 {
-      color: white;
-    }
-
-    .footer {
-      text-align: center;
-      padding: 20px;
-      background: #eee;
-      font-size: 14px;
-    }
-
-    /* FLOATING WHATSAPP BUTTON */
+    /* FLOAT BUTTON */
     .whatsapp-float {
       position: fixed;
-      width: 55px;
-      height: 55px;
       bottom: 20px;
       right: 20px;
-      background-color: #25D366;
-      border-radius: 50px;
+      width: 55px;
+      height: 55px;
+      background: #25D366;
+      border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
-      z-index: 1000;
     }
 
   </style>
@@ -132,72 +127,99 @@
 
 <body>
 
-<div class="topbar">
-📅 ITR Filing FY 2026–27 Has Started | Last Date: 31 July 2026
-</div>
+<div class="topbar">📅 ITR FY 2026–27 Started | Last Date: 31 July 2026</div>
 
 <div class="navbar">
   <img src="logo.png" class="logo">
-  <a href="https://wa.me/919569019250" class="nav-btn">WhatsApp Now</a>
+  <a href="https://wa.me/919569019250" class="nav-btn">WhatsApp</a>
 </div>
 
 <div class="hero">
-  <h1>ITR Filing for Salaried Professionals Made Simple</h1>
-  <p>Save Tax. Maximize Refund. File Without Stress.</p>
-  <a href="https://wa.me/919569019250" class="btn">📲 File My ITR Now</a>
-  <p>Continuing the trusted services of Mukesh Kumar Srivastava</p>
+  <h1>Stop Overpaying Tax Every Year</h1>
+  <p>File your ITR accurately & maximize your refund</p>
+  <a href="https://wa.me/919569019250" class="btn">📲 File Now</a>
 </div>
 
+<!-- SERVICES -->
 <div class="section">
-  <h2>💰 Our Services</h2>
+  <h2>💰 Services</h2>
   <div class="grid">
     <div class="card">ITR Filing</div>
     <div class="card">Tax Planning</div>
     <div class="card">Deduction Optimization</div>
-    <div class="card">Form 16 & TDS Review</div>
-  </div>
-
-  <h2 style="margin-top:40px;">📈 Business Services</h2>
-  <div class="grid">
-    <div class="card">SEO</div>
-    <div class="card">Social Media Marketing</div>
-    <div class="card">Lead Generation</div>
   </div>
 </div>
 
+<!-- COUNTERS -->
 <div class="section">
-  <h2>⚠️ Are You Paying More Tax?</h2>
+  <h2>📊 Our Impact</h2>
   <div class="grid">
-    <div class="card">Missing deductions</div>
-    <div class="card">Wrong tax regime</div>
-    <div class="card">Last-minute mistakes</div>
+    <div class="card"><div class="counter" data-target="200">0</div>Clients Served</div>
+    <div class="card"><div class="counter" data-target="500000">0</div>Tax Saved</div>
+    <div class="card"><div class="counter" data-target="99">0</div>% Accuracy</div>
   </div>
-  <p><b>I help you file correctly and save more — legally.</b></p>
-  <a href="https://wa.me/919569019250" class="btn">💬 Get Expert Help</a>
 </div>
 
+<!-- TESTIMONIAL -->
 <div class="section">
-  <h2>✅ Why Choose Us</h2>
-  <div class="grid">
-    <div class="card">Accurate Filing</div>
-    <div class="card">Maximum Refund</div>
-    <div class="card">Fast Support</div>
+  <h2>⭐ Testimonials</h2>
+  <div class="testimonial" id="testimonial">
+    "Very smooth and quick ITR filing experience."
   </div>
 </div>
 
-<div class="cta">
-  <h2>Ready to File Your ITR Without Stress?</h2>
+<!-- PRICING -->
+<div class="section">
+  <h2>💼 Pricing</h2>
+  <div class="grid">
+    <div class="price-card">Basic ITR Filing<br><b>₹499</b></div>
+    <div class="price-card">ITR + Tax Planning<br><b>₹999</b></div>
+    <div class="price-card">Premium Support<br><b>₹1499</b></div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div class="section">
+  <h2>Ready to File Your ITR?</h2>
   <a href="https://wa.me/919569019250" class="btn">Message on WhatsApp</a>
 </div>
 
-<div class="footer">
-© 2026 Association Of Corporate Accountant
-</div>
+<div class="footer">© 2026 Association Of Corporate Accountant</div>
 
-<!-- FLOATING BUTTON -->
-<a href="https://wa.me/919569019250" class="whatsapp-float">
-  <img src="https://img.icons8.com/ios-filled/30/ffffff/whatsapp.png">
-</a>
+<a href="https://wa.me/919569019250" class="whatsapp-float">💬</a>
+
+<script>
+  // COUNTER ANIMATION
+  const counters = document.querySelectorAll('.counter');
+  counters.forEach(counter => {
+    const update = () => {
+      const target = +counter.getAttribute('data-target');
+      const c = +counter.innerText;
+      const inc = target / 100;
+
+      if(c < target){
+        counter.innerText = Math.ceil(c + inc);
+        setTimeout(update, 20);
+      } else {
+        counter.innerText = target;
+      }
+    };
+    update();
+  });
+
+  // TESTIMONIAL SLIDER
+  const testimonials = [
+    "Very smooth and quick ITR filing experience.",
+    "Got maximum refund. Highly recommended!",
+    "Professional and reliable service."
+  ];
+
+  let i = 0;
+  setInterval(() => {
+    document.getElementById("testimonial").innerText = testimonials[i];
+    i = (i + 1) % testimonials.length;
+  }, 3000);
+</script>
 
 </body>
 </html>
