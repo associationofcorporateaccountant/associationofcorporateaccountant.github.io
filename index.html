@@ -13,9 +13,9 @@
 
     .topbar {
       background: #0B3C5D;
-      padding: 10px;
-      text-align: center;
       color: white;
+      text-align: center;
+      padding: 10px;
       font-size: 14px;
     }
 
@@ -35,8 +35,8 @@
     .nav-btn {
       background: #D4AF37;
       padding: 10px 18px;
-      color: black;
       text-decoration: none;
+      color: black;
       font-weight: bold;
       border-radius: 5px;
     }
@@ -49,41 +49,35 @@
     }
 
     .hero h1 {
-      font-size: 38px;
-      margin-bottom: 10px;
+      font-size: 36px;
     }
 
     .hero p {
       font-size: 18px;
-      opacity: 0.9;
+      margin-top: 10px;
     }
 
     .btn {
       background: #D4AF37;
       padding: 15px 30px;
-      color: black;
       text-decoration: none;
+      color: black;
       font-weight: bold;
       border-radius: 6px;
       display: inline-block;
       margin-top: 20px;
-      transition: 0.3s;
     }
 
-    .btn:hover {
-      background: #c9a227;
-    }
-
-    .container {
+    .section {
       padding: 50px 20px;
       max-width: 1000px;
       margin: auto;
+      text-align: center;
     }
 
     h2 {
       color: #0B3C5D;
       margin-bottom: 20px;
-      text-align: center;
     }
 
     .grid {
@@ -96,13 +90,7 @@
       background: white;
       padding: 20px;
       border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-      text-align: center;
-      transition: 0.3s;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     }
 
     .cta {
@@ -119,8 +107,24 @@
     .footer {
       text-align: center;
       padding: 20px;
-      font-size: 14px;
       background: #eee;
+      font-size: 14px;
+    }
+
+    /* FLOATING WHATSAPP BUTTON */
+    .whatsapp-float {
+      position: fixed;
+      width: 55px;
+      height: 55px;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+      z-index: 1000;
     }
 
   </style>
@@ -129,7 +133,7 @@
 <body>
 
 <div class="topbar">
-📅 ITR Filing FY 2026–27 Started | Last Date: 31 July 2026
+📅 ITR Filing FY 2026–27 Has Started | Last Date: 31 July 2026
 </div>
 
 <div class="navbar">
@@ -138,46 +142,62 @@
 </div>
 
 <div class="hero">
-  <h1>Stop Overpaying Tax Every Year</h1>
-  <p>File your ITR accurately & maximize your refund</p>
-  <a class="btn" href="https://wa.me/919569019250">📲 File My ITR Now</a>
+  <h1>ITR Filing for Salaried Professionals Made Simple</h1>
+  <p>Save Tax. Maximize Refund. File Without Stress.</p>
+  <a href="https://wa.me/919569019250" class="btn">📲 File My ITR Now</a>
+  <p>Continuing the trusted services of Mukesh Kumar Srivastava</p>
 </div>
 
-<div class="container">
-
+<div class="section">
   <h2>💰 Our Services</h2>
   <div class="grid">
-    <div class="card">✔️ ITR Filing</div>
-    <div class="card">✔️ Tax Planning</div>
-    <div class="card">✔️ Deduction Optimization</div>
-    <div class="card">✔️ Form 16 & TDS Review</div>
+    <div class="card">ITR Filing</div>
+    <div class="card">Tax Planning</div>
+    <div class="card">Deduction Optimization</div>
+    <div class="card">Form 16 & TDS Review</div>
   </div>
 
-  <h2>⚠️ Common Mistakes</h2>
+  <h2 style="margin-top:40px;">📈 Business Services</h2>
   <div class="grid">
-    <div class="card">❌ Missing deductions</div>
-    <div class="card">❌ Wrong tax regime</div>
-    <div class="card">❌ Last-minute filing</div>
+    <div class="card">SEO</div>
+    <div class="card">Social Media Marketing</div>
+    <div class="card">Lead Generation</div>
   </div>
+</div>
 
+<div class="section">
+  <h2>⚠️ Are You Paying More Tax?</h2>
+  <div class="grid">
+    <div class="card">Missing deductions</div>
+    <div class="card">Wrong tax regime</div>
+    <div class="card">Last-minute mistakes</div>
+  </div>
+  <p><b>I help you file correctly and save more — legally.</b></p>
+  <a href="https://wa.me/919569019250" class="btn">💬 Get Expert Help</a>
+</div>
+
+<div class="section">
   <h2>✅ Why Choose Us</h2>
   <div class="grid">
-    <div class="card">✔️ Accurate Filing</div>
-    <div class="card">✔️ Maximum Refund</div>
-    <div class="card">✔️ Fast Support</div>
+    <div class="card">Accurate Filing</div>
+    <div class="card">Maximum Refund</div>
+    <div class="card">Fast Support</div>
   </div>
-
 </div>
 
 <div class="cta">
-  <h2>Ready to Save More Tax?</h2>
-  <p>Get your ITR filed quickly and without stress</p>
-  <a class="btn" href="https://wa.me/919569019250">💬 Chat on WhatsApp</a>
+  <h2>Ready to File Your ITR Without Stress?</h2>
+  <a href="https://wa.me/919569019250" class="btn">Message on WhatsApp</a>
 </div>
 
 <div class="footer">
-© 2026 Association of Corporate Accountant  
+© 2026 Association Of Corporate Accountant
 </div>
+
+<!-- FLOATING BUTTON -->
+<a href="https://wa.me/919569019250" class="whatsapp-float">
+  <img src="https://img.icons8.com/ios-filled/30/ffffff/whatsapp.png">
+</a>
 
 </body>
 </html>
