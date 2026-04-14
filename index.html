@@ -1,249 +1,202 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Tax & Digital Solutions</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Association of Corporate Accountant</title>
 
-  <style>
-    body {
-      margin:0;
-      font-family:'Segoe UI', sans-serif;
-      background:#f5f7fa;
-    }
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f8f9fb;
+}
 
-    /* NAVBAR */
-    .navbar {
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      padding:15px 40px;
-      background:white;
-      position:sticky;
-      top:0;
-      z-index:999;
-      box-shadow:0 2px 8px rgba(0,0,0,0.08);
-    }
+/* Announcement Bar */
+.announcement {
+    background: #c9a14a;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    font-size: 14px;
+}
 
-    .logo { height:45px; }
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 50px;
+    background: white;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
 
-    .menu a {
-      margin:0 15px;
-      text-decoration:none;
-      color:#0B3C5D;
-      font-weight:500;
-    }
+header img {
+    height: 50px;
+}
 
-    .contact-btn {
-      background:#D4AF37;
-      padding:10px 18px;
-      border-radius:6px;
-      text-decoration:none;
-      color:black;
-      font-weight:bold;
-    }
+header h1 {
+    color: #0b2c4d;
+    font-size: 22px;
+}
 
-    /* HERO */
-    .hero {
-      background:linear-gradient(135deg,#0B3C5D,#1F4E79);
-      color:white;
-      text-align:center;
-      padding:100px 20px;
-    }
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #0b2c4d, #1d4e89);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
 
-    .hero h1 { font-size:42px; }
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
 
-    .hero p { font-size:18px; margin-top:10px; }
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
 
-    .btn {
-      background:#D4AF37;
-      padding:15px 30px;
-      margin-top:20px;
-      display:inline-block;
-      text-decoration:none;
-      color:black;
-      border-radius:6px;
-      font-weight:bold;
-    }
+.btn {
+    padding: 12px 25px;
+    background: #c9a14a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
 
-    /* SECTION */
-    .section {
-      padding:80px 20px;
-      max-width:1100px;
-      margin:auto;
-      text-align:center;
-    }
+/* Section */
+.section {
+    padding: 60px 40px;
+    text-align: center;
+}
 
-    h2 { color:#0B3C5D; margin-bottom:20px; }
+.section h2 {
+    color: #0b2c4d;
+    margin-bottom: 30px;
+}
 
-    .grid {
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-      gap:25px;
-    }
+/* Services */
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
 
-    .card {
-      background:white;
-      padding:25px;
-      border-radius:12px;
-      box-shadow:0 10px 25px rgba(0,0,0,0.08);
-      transition:0.3s;
-    }
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
 
-    .card:hover {
-      transform:translateY(-8px);
-    }
+.card h3 {
+    color: #c9a14a;
+}
 
-    /* PROCESS */
-    .process {
-      display:flex;
-      flex-direction:column;
-      gap:20px;
-    }
+/* CTA */
+.cta {
+    background: #0b2c4d;
+    color: white;
+    padding: 60px 20px;
+}
 
-    /* TESTIMONIAL */
-    .testimonial {
-      background:white;
-      padding:30px;
-      border-radius:10px;
-      box-shadow:0 5px 15px rgba(0,0,0,0.1);
-    }
-
-    /* PRICING */
-    .price-card {
-      background:white;
-      padding:30px;
-      border-radius:12px;
-      box-shadow:0 10px 25px rgba(0,0,0,0.08);
-    }
-
-    /* CTA */
-    .cta {
-      background:#0B3C5D;
-      color:white;
-      text-align:center;
-      padding:80px 20px;
-    }
-
-    /* FOOTER */
-    .footer {
-      background:#111;
-      color:white;
-      padding:40px 20px;
-      text-align:center;
-    }
-
-    /* FLOAT BUTTON */
-    .whatsapp {
-      position:fixed;
-      bottom:20px;
-      right:20px;
-      background:#25D366;
-      width:55px;
-      height:55px;
-      border-radius:50%;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      color:white;
-      font-size:24px;
-    }
-
-  </style>
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+</style>
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<div class="navbar">
-  <img src="logo.png" class="logo">
-  <div class="menu">
-    <a href="#services">Services</a>
-    <a href="#process">Process</a>
-    <a href="#pricing">Pricing</a>
-    <a href="#contact">Contact</a>
-  </div>
-  <a href="https://wa.me/919569019250" class="contact-btn">Contact</a>
+<!-- Announcement -->
+<div class="announcement">
+    🚨 Tax Filing for 2026-27 has started. File now to save more!
 </div>
 
-<!-- HERO -->
-<div class="hero">
-  <h1>Smart Tax Filing & Digital Growth</h1>
-  <p>Save Tax. Maximize Refund. Grow Your Business.</p>
-  <a href="https://wa.me/919569019250" class="btn">📲 Get Started</a>
-</div>
+<!-- Header -->
+<header>
+    <div style="display:flex; align-items:center; gap:10px;">
+        <img src="logo.png" alt="Logo">
+        <h1>Association of Corporate Accountant</h1>
+    </div>
+</header>
 
-<!-- SERVICES -->
-<div class="section" id="services">
-  <h2>💰 Our Services</h2>
-  <div class="grid">
-    <div class="card">📄 ITR Filing</div>
-    <div class="card">📊 Tax Planning</div>
-    <div class="card">💸 Deduction Optimization</div>
-    <div class="card">📑 Form 16 Review</div>
-    <div class="card">🔍 SEO</div>
-    <div class="card">📱 Social Media Marketing</div>
-    <div class="card">🎯 Lead Generation</div>
-  </div>
-</div>
+<!-- Hero -->
+<section class="hero">
+    <h2>Helping Businesses Grow & Professionals Save More Tax</h2>
+    <p>Your one-stop solution for Taxation, Compliance & Digital Growth</p>
+    <button class="btn">Get Started</button>
+    <button class="btn">Book Consultation</button>
+</section>
 
-<!-- PROCESS -->
-<div class="section" id="process">
-  <h2>⚡ How It Works</h2>
-  <div class="grid">
-    <div class="card">1️⃣ Share Documents</div>
-    <div class="card">2️⃣ Analysis & Optimization</div>
-    <div class="card">3️⃣ Filing & Confirmation</div>
-  </div>
-</div>
+<!-- About -->
+<section class="section">
+    <h2>Who We Are</h2>
+    <p>
+        We are a team of financial experts and digital growth specialists helping individuals 
+        and businesses with taxation, compliance, and result-driven marketing strategies.
+    </p>
+</section>
 
-<!-- TESTIMONIAL -->
-<div class="section">
-  <h2>⭐ Testimonials</h2>
-  <div class="testimonial" id="testimonial">
-    "Very smooth ITR filing experience."<br><b>— Amit Sharma</b>
-  </div>
-</div>
+<!-- Services -->
+<section class="section">
+    <h2>Our Services</h2>
+    <div class="services">
 
-<!-- PRICING -->
-<div class="section" id="pricing">
-  <h2>💼 Pricing</h2>
-  <div class="grid">
-    <div class="price-card">Basic ITR<br><b>₹499</b></div>
-    <div class="price-card">ITR + Planning<br><b>₹999</b></div>
-    <div class="price-card">Premium<br><b>₹1499</b></div>
-  </div>
-</div>
+        <div class="card">
+            <h3>Tax & Compliance</h3>
+            <p>ITR Filing, Tax Planning, TDS, Salary Tax Optimization</p>
+        </div>
+
+        <div class="card">
+            <h3>Business Services</h3>
+            <p>GST Filing, Company Registration, Accounting & Payroll</p>
+        </div>
+
+        <div class="card">
+            <h3>Digital Marketing</h3>
+            <p>SEO, Social Media, Google Ads, Lead Generation</p>
+        </div>
+
+        <div class="card">
+            <h3>Website Development</h3>
+            <p>React, Shopify & WordPress Development for Businesses</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="section">
+    <h2>Why Choose Us</h2>
+    <p>
+        ✔ One-stop solution for Tax & Growth <br>
+        ✔ Experienced Professionals <br>
+        ✔ Customized Strategies <br>
+        ✔ Affordable Pricing <br>
+        ✔ Dedicated Support
+    </p>
+</section>
 
 <!-- CTA -->
-<div class="cta" id="contact">
-  <h2>Ready to Save More Tax?</h2>
-  <a href="https://wa.me/919569019250" class="btn">Message on WhatsApp</a>
-</div>
+<section class="cta">
+    <h2>Ready to Grow Your Business & Save Tax?</h2>
+    <p>Let our experts handle everything while you focus on your growth.</p>
+    <button class="btn">Talk to Expert</button>
+</section>
 
-<!-- FOOTER -->
-<div class="footer">
-  © 2026 Association Of Corporate Accountant <br>
-  Contact: +91 9569019250
-</div>
-
-<!-- FLOAT BUTTON -->
-<a href="https://wa.me/919569019250" class="whatsapp">💬</a>
-
-<script>
-// TESTIMONIAL SLIDER
-const t = [
-"Excellent service. — Amit Sharma",
-"Saved good tax amount. — Priya Verma",
-"Very professional. — Rahul Singh",
-"Highly recommended. — Neha Gupta"
-];
-
-let i = 0;
-setInterval(()=>{
-document.getElementById("testimonial").innerHTML = t[i];
-i = (i+1)%t.length;
-},3000);
-</script>
+<!-- Footer -->
+<footer>
+    <p>© 2026 Association of Corporate Accountant | All Rights Reserved</p>
+</footer>
 
 </body>
 </html>
